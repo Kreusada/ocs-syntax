@@ -1,0 +1,44 @@
+{
+    "name": "ocs",
+    "displayName": "OceanScript",
+    "description": "OceanScript Esoteric Language",
+    "version": "0.0.1",
+    "publisher": "Kreusada",
+    "license": "MIT",
+    "engines": {
+        "vscode": "^1.59.0"
+    },
+    "icon": "images/icon.png",
+    "homepage": "https://github.com/Kreusada/ocs-syntax#readme",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Kreusada/ocs-syntax"
+    },
+    "bugs": {
+        "url": "https://github.com/Kreusada/ocs-syntax/issues"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "keywords": [
+        "oceanscript",
+        "vscode",
+        "ocs",
+        "language",
+        "highlight",
+        "syntax"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "ocs",
+            "aliases": ["OceanScript", "ocs"],
+            "extensions": [".ocs"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "ocs",
+            "scopeName": "source.ocs",
+            "path": "./syntaxes/ocs.tmLanguage.json"
+        }]
+    }
+}
